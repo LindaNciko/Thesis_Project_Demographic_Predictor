@@ -172,8 +172,8 @@ if selected_page == "Predictions":
     # --- Process Prediction ---
     if submit_button:
         try:
-            st.markdown("---")
-            st.subheader("Processing Prediction...")
+            # st.markdown("---")
+            # st.subheader("Processing Prediction...")
 
             # 1. Collect input data
             input_data = {}
@@ -218,8 +218,8 @@ if selected_page == "Predictions":
                     input_encoded[col] = encoded_values
                 else:
                      st.warning(f"Column '{col}' from LE not found.")
-            st.write("Encoded DataFrame (Input to Model):")
-            st.dataframe(input_encoded) # This is now the direct input to the model
+            # st.write("Encoded DataFrame (Input to Model):")
+            # st.dataframe(input_encoded) # This is now the direct input to the model
 
             # 5. SKIP Feature Selection Step
             # st.write("Skipping feature selection step.") # Optional: Keep for debugging
@@ -346,11 +346,11 @@ elif selected_page == "Data Overview (EDA)":
 
     if df_eda is not None:
         # ========================= DEBUG =========================
-        st.subheader("DEBUG: Columns Found in data.csv")
-        st.write("**ACTION REQUIRED:** Inspect these names carefully and update the hardcoded names (marked with <<< TODO >>>) in the code below if they don't match your `data.csv` file.")
-        actual_columns = df_eda.columns.tolist()
-        st.write(actual_columns)
-        st.markdown("---")
+        # st.subheader("DEBUG: Columns Found in data.csv")
+        # st.write("**ACTION REQUIRED:** Inspect these names carefully and update the hardcoded names (marked with <<< TODO >>>) in the code below if they don't match your `data.csv` file.")
+        # actual_columns = df_eda.columns.tolist()
+        # st.write(actual_columns)
+        # st.markdown("---")
         # ======================= END DEBUG =======================
 
         st.subheader("Sample Data")
