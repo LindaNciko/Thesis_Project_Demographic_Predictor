@@ -1,3 +1,5 @@
+/* style.css - Dark Theme */
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -13,13 +15,11 @@ html, body {
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* background-color: #f4f7f6; */
     background-color: #1a1d21; /* Dark background for the page */
     display: flex; /* Use flex for centering */
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Fallback height */
-    /* color: #333; */
     color: #e0e0e0; /* Light text color for body */
     padding: 20px; /* Add padding around container */
 }
@@ -29,10 +29,8 @@ body {
     width: 95%; /* Use percentage for better flexibility */
     height: 85vh; /* Set a relative height */
     max-height: 700px; /* Optional max height */
-    /* background-color: #ffffff; */
     background-color: #2c3035; /* Darker background for the container */
     border-radius: 20px;
-    /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); */
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4); /* Adjusted shadow for dark theme */
     overflow: hidden;
 }
@@ -48,11 +46,10 @@ body {
     flex-direction: column;
     justify-content: center;
     color: #f0f0f0; /* Keep light text */
-    /* No border radius needed here if container overflows hidden */
 }
 
 .welcome-text h1 {
-    font-size: 2.2rem; /* Slightly smaller */
+    font-size: 2.2rem;
     margin-bottom: 15px;
     font-weight: 600;
     color: #ffffff; /* Keep white */
@@ -70,7 +67,6 @@ body {
     flex: 1; /* Takes up remaining space */
     padding: 30px 40px;
     overflow-y: auto; /* Allow scrolling if content overflows */
-    /* background-color: #ffffff; */
     background-color: #2c3035; /* Match container background */
     display: flex;
     flex-direction: column; /* Stack title, form, button */
@@ -79,50 +75,45 @@ body {
 .input-pane h2 {
     text-align: center;
     margin-bottom: 25px;
-    /* color: #333; */
     color: #e0e0e0; /* Light text color */
     font-weight: 600;
-    flex-shrink: 0; /* Prevent title from shrinking */
+    flex-shrink: 0;
 }
 
 #prediction-form {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
     gap: 15px 20px; /* Row gap, Column gap */
-    flex-grow: 1; /* Allow form to take available space */
-    margin-bottom: 25px; /* Space before button */
+    flex-grow: 1;
+    margin-bottom: 25px;
 }
 
 .form-group {
-    /* No margin needed as grid gap handles spacing */
+    /* Grid gap handles spacing */
 }
 
 .form-group label {
     display: block;
     margin-bottom: 6px;
     font-weight: 500;
-    /* color: #555; */
     color: #bdbdbd; /* Lighter grey for labels */
-    font-size: 0.85rem; /* Slightly smaller label */
-    white-space: nowrap; /* Prevent labels breaking line */
+    font-size: 0.85rem;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* Add ... if label too long */
+    text-overflow: ellipsis;
 }
 
 .form-group select {
     width: 100%;
-    padding: 10px 12px; /* Adjust padding */
-    /* border: 1px solid #ddd; */
+    padding: 10px 12px;
     border: 1px solid #555; /* Darker border */
-    border-radius: 6px; /* Slightly smaller radius */
-    /* background-color: #fdfdfd; */
+    border-radius: 6px;
     background-color: #3a3f44; /* Dark background for selects */
     color: #e0e0e0; /* Light text in selects */
     font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem; /* Smaller font in select */
+    font-size: 0.9rem;
     transition: border-color 0.3s ease;
     appearance: none;
-    /* background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23cccccc%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); */
     /* Update SVG arrow fill color for dark background */
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23aaaaaa%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
@@ -139,7 +130,7 @@ body {
 /* Submit button styling - Keep accent color */
 #submit-button {
     width: 100%;
-    padding: 12px; /* Adjust padding */
+    padding: 12px;
     background-color: #ff6f61;
     color: white;
     border: none;
@@ -148,8 +139,8 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
-    margin-top: auto; /* Push button to bottom if form doesn't fill space */
-    flex-shrink: 0; /* Prevent button shrinking */
+    margin-top: auto;
+    flex-shrink: 0;
 }
 
 #submit-button:hover {
@@ -161,7 +152,6 @@ body {
 }
 
 #submit-button:disabled {
-    /* background-color: #ccc; */
     background-color: #555; /* Dark grey for disabled */
     color: #888; /* Dim text for disabled */
     cursor: not-allowed;
@@ -171,10 +161,8 @@ body {
 /* Pane 3: Output/Results */
 .output-pane {
     flex: 0 0 30%; /* Adjust width percentage */
-    /* background-color: #f8f9fa; */
     background-color: #33383d; /* Slightly different dark background */
     padding: 30px;
-    /* border-left: 1px solid #e0e0e0; */
     border-left: 1px solid #44494e; /* Darker border */
     display: flex;
     flex-direction: column;
@@ -183,7 +171,6 @@ body {
 
 .output-pane h3 {
     margin-bottom: 20px;
-    /* color: #333; */
     color: #e0e0e0; /* Light text color */
     font-weight: 600;
     text-align: center;
@@ -191,17 +178,15 @@ body {
 }
 
 .results-area, .error-area {
-    padding: 15px; /* Reduced padding */
+    padding: 15px;
     border-radius: 6px;
     word-wrap: break-word;
-    margin-bottom: 15px; /* Space between results/errors */
-    flex-shrink: 0; /* Prevent shrinking */
+    margin-bottom: 15px;
+    flex-shrink: 0;
 }
 
 .results-area {
-    /* background-color: #e6f4ea; */
     background-color: #383838; /* Dark grey background */
-    /* border: 1px solid #c3e6cb; */
     border: 1px solid #66bb6a; /* Brighter green border */
 }
 
@@ -214,32 +199,27 @@ body {
 }
 
 .results-area code {
-    /* color: #155724; */
     color: #a5d6a7; /* Light green text */
     font-family: monospace;
     font-size: 0.9rem;
 }
 
 .error-area {
-    /* background-color: #f8d7da; */
     background-color: #383838; /* Dark grey background */
-    /* border: 1px solid #f5c6cb; */
     border: 1px solid #ef5350; /* Brighter red border */
 }
 
 .error-area p {
-    /* color: #721c24; */
     color: #ef9a9a; /* Light red text */
     font-size: 0.9rem;
 }
 
 .output-placeholder {
-    flex-grow: 1; /* Takes remaining space */
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* color: #888; */
     color: #888888; /* Keep placeholder grey, should be visible */
     font-style: italic;
 }
@@ -251,10 +231,10 @@ body {
 @media (max-width: 1200px) {
     .container {
         width: 98%;
-        height: 90vh; /* Allow more height */
+        height: 90vh;
     }
      #prediction-form {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        grid-template-columns: repeat(2, 1fr);
     }
     .image-pane { flex-basis: 30%; }
     .output-pane { flex-basis: 30%; }
@@ -264,28 +244,28 @@ body {
 
 @media (max-width: 900px) { /* Breakpoint for stacking */
     body {
-        align-items: flex-start; /* Align container to top */
-        padding: 0; /* Remove body padding */
-        height: auto; /* Allow body height to adjust */
+        align-items: flex-start;
+        padding: 0;
+        height: auto;
         min-height: 100vh;
     }
     .container {
         flex-direction: column;
         width: 100%;
-        height: auto; /* Auto height when stacked */
+        height: auto;
         min-height: 100vh;
         border-radius: 0;
         box-shadow: none;
     }
 
     .image-pane, .input-pane, .output-pane {
-        flex: none; /* Reset flex */
+        flex: none;
         width: 100%;
         border-radius: 0;
-        border-left: none; /* Remove side border - Still relevant */
+        border-left: none;
         border-top: 1px solid #44494e; /* Add top border between stacked panes */
-        max-height: none; /* Remove height limits */
-        overflow-y: visible; /* Allow content to determine height */
+        max-height: none;
+        overflow-y: visible;
     }
     /* Remove border from the very first pane when stacked */
     .image-pane {
@@ -293,7 +273,7 @@ body {
     }
 
      .image-pane {
-        min-height: 150px; /* Ensure some height */
+        min-height: 150px;
         text-align: center;
         justify-content: center;
         padding: 20px;
@@ -301,22 +281,22 @@ body {
 
      .input-pane {
          padding: 25px;
-         order: 2; /* Display input below image */
+         order: 2;
      }
      .output-pane {
          padding: 25px;
-         order: 3; /* Display output last */
-         min-height: 150px; /* Ensure output area has some space */
+         order: 3;
+         min-height: 150px;
      }
 
     #prediction-form {
-        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns or switch to 1 */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
     #prediction-form {
-        grid-template-columns: 1fr; /* Single column for small screens */
+        grid-template-columns: 1fr;
     }
      .welcome-text h1 {
         font-size: 1.8rem;
