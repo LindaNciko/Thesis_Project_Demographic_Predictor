@@ -2,6 +2,8 @@
 
 A Streamlit application for predicting demographics based on spending habits.
 
+> [Try Demo Here](https://demographic-predictor.streamlit.app/)
+
 ## Prerequisites
 
 - Python 3.9+
