@@ -348,7 +348,7 @@ elif selected_page == "Data Overview (EDA)":
         # ========================= DEBUG =========================
         # st.subheader("DEBUG: Columns Found in data.csv")
         # st.write("**ACTION REQUIRED:** Inspect these names carefully and update the hardcoded names (marked with <<< TODO >>>) in the code below if they don't match your `data.csv` file.")
-        # actual_columns = df_eda.columns.tolist()
+        actual_columns = df_eda.columns.tolist()
         # st.write(actual_columns)
         # st.markdown("---")
         # ======================= END DEBUG =======================
