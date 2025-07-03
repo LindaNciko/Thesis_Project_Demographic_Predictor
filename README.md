@@ -348,8 +348,8 @@ Feature importances are extracted directly from the trained XGBoost estimators f
 
 For inquiries or support, please reach out via:
 
-- **Email**: [paulmwaura254@gmail.com](mailto:paulmwaura254@gmail.com)
-- **LinkedIn**: [Paul Ndirangu](https://www.linkedin.com/in/paul-ndirangu/)
+- **Email**: [lindawanciko20@gmail.com](mailto:lindawanciko20@gmail.com)
+- **LinkedIn**: [Claudine Linda Nciko](https://www.linkedin.com/in/claudine-linda-nciko-b28b6a1a4/)
 
 ---
 
